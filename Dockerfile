@@ -12,3 +12,5 @@ FROM alpine:3.13
 COPY --from=0 "/go/src/app/hello" hello
  
 ENTRYPOINT ./hello
+
+LABEL org.opencontainers.image.source="https://github.com/leulima/docker-hello-world"
